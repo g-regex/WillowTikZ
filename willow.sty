@@ -1,0 +1,31 @@
+\usepackage{fdsymbol}
+\usepackage{tikz-qtree}
+
+%https://tex.stackexchange.com/questions/296543/how-can-i-make-a-really-zero-height-box
+\let\oldeverypar\everypar
+\oldeverypar{\the\everypar\the\mynotes\global\mynotes{}}
+\newtoks\mynotes
+\protected\long\def\mynote#1{%
+	\ifvmode
+		\global\mynotes\expandafter{\the\mynotes\smash{\raise\baselineskip\rlap{#1}}}%
+	\else
+		\smash{#1}%
+	\fi}
+
+\def\willowlabel#1{\mynote{\raise-\baselineskip\rlap{\centerline{\begin{minipage}[t]{5em}\centering\colorbox{gray!20}{\texttt{#1}}\end{minipage}}}}}
+\def\willowplus{\mynote{\raise3pt\rlap{\makebox[0pt]{$\hspace*{12.5pt}\scriptstyle\oplus$}}}}
+\def\willowminus{\mynote{\raise3pt\rlap{\makebox[0pt]{$\scriptstyle\ominus$\hspace*{5pt}}}}}
+
+\tikzset{
+	willow/.style={
+			edge from parent/.style={
+					draw, blend mode=screen,
+					edge from parent path={(\tikzparentnode) -- (\tikzchildnode)}
+				},
+			node distance=40pt, step=40pt, x=40pt, y=40pt,
+			inner sep=0, outer sep=0, minimum size=4pt, text width=4pt,
+			every tree node/.style={draw, circle},sibling distance=10em
+		}
+}
+
+

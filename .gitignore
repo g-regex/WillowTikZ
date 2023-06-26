@@ -1,0 +1,6 @@
+*
+!*.v
+!*.hs
+!*.sty
+!LICENSE
+!.gitignore
