@@ -30,7 +30,7 @@ Here is an example figure:
 \end{document}
 ```
 
-Only alpha-numeric characters and any of `['+', '-', '=', '.', ',', ';', ' ', '[', ']']` are accepted in the input string. Labels which are longer than 10 characters are truncated.
+Only alpha-numeric characters and any of `'+', '-', '=', '.', ',', ';', ' ', '[', ']'` are accepted in the input string. Labels which are longer than 10 characters are truncated.
 
 ## Compiling
 
