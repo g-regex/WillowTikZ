@@ -12,7 +12,7 @@ runhaskell WillowTikZ.hs "[1]+[2]=[3]"
 
 After compiling the generated LaTeX code, you get:
 
-![](example.svg)
+![](example.png)
 
 The generated picture can also be used within other documents. Simply copy the file `willow.sty` to the directory of your LaTeX project. Then you can use the TikZ picture as follows:
 
