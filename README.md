@@ -30,6 +30,8 @@ Here is an example figure:
 \end{document}
 ```
 
+Only alpha-numeric characters and any of `['+', '-', '=', '.', ',', ';', ' ', '[', ']']` are accepted in the input string. Labels which are longer than 10 characters are truncated.
+
 ## Compiling
 
 The file `Willows.hs` has been extracted from the Coq code `willows.v`. To extract it yourself, run:
