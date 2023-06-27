@@ -7,7 +7,7 @@ This simple Haskell program illustrates the use of a functorial parser to genera
 Clone the repository. To generate the source code for the TikZ picture corresponding to the example string `[1]+[2]=[3]` run:
 
 ```
-runhaskell WillowTikZ.hs "[1]+[2]=[3]"
+runhaskell Main.hs "[1]+[2]=[3]"
 ```
 
 After compiling the generated LaTeX code, you get:
@@ -43,5 +43,5 @@ coqc willows.v
 To compile the Haskell code to an executable, run:
 
 ```
-ghc WillowTikZ.hs
+ghc Main.hs
 ```
