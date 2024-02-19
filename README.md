@@ -10,7 +10,7 @@ Clone the repository. To generate the source code for the TikZ picture correspon
 runhaskell Main.hs "[1]+[2]=[3]"
 ```
 
-After compiling the generated LaTeX code, you get:
+After compiling the generated LaTeX code, you get the following:
 
 ![](example.png)
 
